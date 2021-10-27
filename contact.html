@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/script.js"></script>
+
+    <title>4469 Midterm</title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-light bg-light" id="navbar">
+        <a class="navbar-brand text-white" href="#">4469</a>
+    </nav>
+
+    <div class="row">
+        <div class="col-2">
+            <ul class="no-style" id="menu">
+                <li>
+                    <a href="index.html" class="btn btn-secondary">Home</a>
+                </li>
+                <li>
+                    <a href="quiz.html" class="btn btn-secondary" onclick="startTimer()">Quiz</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="btn btn-outline-secondary">Contact</a>
+                </li>
+            </ul>
+            
+        </div>
+
+
+        <div class="col-10">
+            <form>
+                <div class="form-group">
+                    <label for="surname">Surname</label>
+                    <input type="text" class="form-control" id="surname" placeholder="Enter surname" required>
+                    <p id="error" class="text-danger" style="display: none;">Surname must be at least 10 characters long</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentId">Student Id</label>
+                    <input type="number" class="form-control" id="studentId" placeholder="Enter Student Id">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+
+                <div class="form-group">
+                  <label for="note">Note</label>
+                  <textarea class="form-control" id="note" placeholder="Enter note"></textarea>
+                </div>
+
+                <a href="#" class="btn btn-primary" onclick="submitContactForm()">Submit</a>
+              </form>
+
+              <div id="test">
+
+              </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

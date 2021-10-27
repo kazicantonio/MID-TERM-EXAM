@@ -1,0 +1,15 @@
+#navbar{
+    background-image: url("../images/header.jpg");
+}
+
+.no-style{
+    list-style: none;
+}
+
+#menu li{
+    margin: 1rem;
+}
+
+ol{
+    list-style-type: lower-roman;
+}
